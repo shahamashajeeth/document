@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ShowTrackr</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<style type="text/css">
+    #show {
+        text-align: justify;
+        font-size: 0.1px;
+    }
+
+    #show:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+
+    #show .mix {
+        display: none;
+        opacity: 0;
+        vertical-align: top;
+        /*margin-bottom: 20px;*/
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        /*line-height: 200px;*/
+    }
+
+    #show .gap {
+        display: inline-block;
+        /*width: 200px;*/
+    }
+</style>
+
+<nav class="navbar navbar-inverse" style="box-shadow: 2px 2px 4px #000000;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="http://showtrackr.nixsiow.com/">
+      <a class="navbar-brand-info"><strong>ShowTrackr</a></strong></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="inndex.html">Home</a></li>
+
+      <li><a href="addw.html">Add</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="sign.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <h4><center>
+    <section>
+  <button  class="btn filter">0-9</button>
+	<button  class="btn filter" data-filter="A">A</button>
+	<button  class="btn filter" data-filter="B">B</button>
+	<button  class="btn filter" data-filter="C">C</button>
+	<button  class="btn filter" data-filter="D">D</button>
+	<button  class="btn filter" data-filter="E">E</button>
+	<button  class="btn filter" data-filter="F">F</button>
+	<button  class="btn filter" data-filter="G">G</button>
+	<button  class="btn filter" data-filter="H">H</button>
+	<button  class="btn filter" data-filter="I">I</button>
+	<button  class="btn filter" data-filter="J">J</button>
+	<button  class="btn filter" data-filter="K">K</button>
+	<button  class="btn filter" data-filter="L">L</button>
+	<button  class="btn filter" data-filter="M">M</button>
+	<button  class="btn filter" data-filter="N">N</button>
+	<button  class="btn filter" data-filter="O">O</button>
+	<button  class="btn filter" data-filter="P">P</button>
+	<button  class="btn filter" data-filter="Q">Q</button>
+	<button  class="btn filter" data-filter="R">R</button>
+	<button  class="btn filter" data-filter="S">S</button>
+	<button  class="btn filter" data-filter="T">T</button>
+	<button  class="btn filter" data-filter="U">U</button>
+	<button  class="btn filter" data-filter="V">V</button>
+	<button  class="btn filter" data-filter="W">W</button>
+	<button  class="btn filter" data-filter="X">X</button>
+	<button  class="btn filter" data-filter="Y">Y</button>
+	<button  class="btn filter" data-filter="Z">Z</button>
+</h4><h4></center>
+  <center>
+  <button  class="btn filter" data-filter="Action">Action</button>
+  <button  class="btn filter" data-filter="Adventure">Adventure</button>
+  <button  class="btn filter" data-filter="Animation">Animation</button>
+  <button  class="btn filter" data-filter="Children">Children</button>
+  <button  class="btn filter" data-filter="Comady">Comady</button>
+  <button  class="btn filter" data-filter="Documantry">Documantry</button>
+  <button  class="btn filter" data-filter="Drama">Drama</button>
+  <button  class="btn filter" data-filter="Family">Family</button>
+  <button  class="btn filter" data-filter="Fancy">Fantacy</button>
+  <button  class="btn filter" data-filter="Food">Food</button>
+  <button  class="btn filter" data-filter="Home">Home and Garden</button>
+  <button  class="btn filter" data-filter="Horror">Horror</button>
+  <br><br>
+  <button  class="btn filter" data-filter="MiniSeries">Mini-Series</button>
+  <button  class="btn filter" data-filter="Mystery">Mystery</button>
+  <button  class="btn filter" data-filter="News">News</button>
+  <button  class="btn filter" data-filter="Mystery">Reality</button>
+  <button  class="btn filter" data-filter="Romance">Romance</button>
+  <button  class="btn filter" data-filter="SciFic">Sci-Fic</button>
+  <button  class="btn filter" data-filter="Sports">Sports</button>
+  <button  class="btn filter" data-filter="Supense">Supense</button>
+  <button  class="btn filter" data-filter="TalkShow">Talk Show</button>
+  <button  class="btn filter" data-filter="Thriller">Thriller</button>
+  <button  class="btn filter" data-filter="Travel">Travel</button>
+</h4>
+</div>
+</center>
+
+
+<hr>
+
+<div class="container">
+<fieldset>
+<caption><strong>Top Rating TV Shows</strong>
+<form class="navbar-form navbar-right">
+ <div class="input-group">
+   <input type="text" class="form-control" placeholder="Search">
+   <div class="input-group-btn">
+     <button class="btn btn-default" type="submit">
+       <i class="glyphicon glyphicon-search"></i>
+     </button>
+   </div>
+ </div>
+</form>
+</caption>
+<hr>
+<br>
+<div id="show">
+  <div class="row">
+    <div class="col-md-4 mix Fantacy Adventure G Travel" >
+      <div class="thumbnail">
+        <a href="show.html" target="_blank">
+
+          <img src="Images/gameofthrones.jpeg" alt="Lights" width="240" height="150">
+          <div class="caption">
+            <h5><center>Game of thrones</center></h5>
+
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 mix Drama Romance B">
+      <div class="thumbnail">
+        <a href="show-1.html" target="_blank">
+          <img src="Images/breaking bad.jpeg" alt="Nature" width="240" height="150">
+          <div class="caption">
+             <h5><center>Breaking Bad</center></p>
+
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 mix Drama Thriller D">
+      <div class="thumbnail">
+        <a href="show-2.html" target="_blank">
+          <img src="Images/dexter.jpeg" alt="Fjords" width="240" height="150">
+          <div class="caption">
+                        <h5><center>Dexter</center></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mix Comady H">
+      <div class="thumbnail">
+        <a href="#" target="_blank">
+          <img src="Images/how i met your mther.jpeg" alt="Lights" width="240" height="150">
+          <div class="caption">
+            <h5><center>How I met your mother</center></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 mix Fantacy Drama T">
+      <div class="thumbnail">
+        <a href="#" target="_blank">
+          <img src="Images/thewire.jpeg" alt="Nature" width="240" height="150">
+          <div class="caption">
+             <h5><center>The wire</center></p>
+
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 mix SciFic Drama Thriller R">
+      <div class="thumbnail">
+        <a href="#" target="_blank">
+          <img src="Images/riseup.jpeg" alt="Fjords" width="240" height="150">
+          <div class="caption">
+                        <h5><center>Rise Up</center></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+<footer>
+  <hr>
+  <p><center>
+  |<a href="#"><i class="fa fa-facebook-square" style="font-size:24px; color:darkblue"></i>Facebook</a>
+	|<a href="#"><i class="fa fa-google-plus-square" style="font-size:24px; color:red"></i>Google+</a>
+	|<a href="#"><i class="fa fa-github" style="font-size:24px; color:black"></i>GitHub</a>
+	| <i class="icon-user"></i> <a href="index.html">Show<b>Trackr</b></a>
+</p></center>
+</footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+
+        <script src="js/jquery.mixitup.min.js "></script>
+
+
+        <script type="text/javascript">
+            $(function() {
+                $('#show').mixitup();
+            });
+        </script>
+
+
+</body>
+</html>

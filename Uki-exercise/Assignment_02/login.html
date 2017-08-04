@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title>Log-In</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="includes/js/modernizr-2.6.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+    <body style="background-color:silver;">
+
+  <nav class="navbar navbar-inverse" style="box-shadow: 2px 2px 4px #000000;">
+    <div class="container-fluid ">
+    <div class="navbar-header">
+    <a class="navbar-brand-info"> <strong>ShowTrackr</strong></a>
+    </div>
+    <ul class="nav navbar-nav">
+    <li><a href="inndex.html">Home</a></li>
+
+    <li><a href="addw.html">Add</a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+    <li><a href="sign.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    <li class="active"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+    </div>
+  </nav>
+
+  <div style="margin: auto;
+      width: 30%;
+      padding: 50px;">
+
+
+  <div class="col-14" align="center">
+  <div class="thumbnail" align="center">
+  <center><strong><h2>Log in</strong></h2>
+  <form class="form-horizontal">
+  <div class="form-group">
+  <div class="col-lg-12">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input type="text" id="username"  class="form-control" name="email" placeholder="Email" title="Username must not be blank and contain only letters, numbers and underscores." required pattern="\w+"> </div>
+  </div>
+  </div>
+
+  <div class="form-group">
+
+  <div class="col-lg-12">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+  <input type="password" id="password" class="form-control" placeholder="Password" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers." required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1">
+  </div><br>
+  <button type="button" class="btn btn-success btn-block" onclick="getInfo()">Log in</button><br>
+  <b>Forgot your Password?</b><br>
+  <br>Don't have an account yet? <b onclick="window.location='sign.html';">Sign up</b><br>
+  <center><b>or<b></center>
+   <br>
+  <button type="button" class="btn btn-primary btn-block"></a><i class="fa fa-facebook-f" style="font-size:24px"></i>Sign in with Facebook
+  </button>
+  <button type="button" class="btn btn-danger btn-block"><i class="fa fa-google-plus" style="font-size:24px"></i>Sign in with google
+  </button>
+  </div>
+  </form></center>
+  </div>
+
+  <script src="asses2.js"></script>
+
+  </body>
+  </html>

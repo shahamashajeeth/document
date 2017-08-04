@@ -1,0 +1,5 @@
+
+1.Click save    file
+2.cd /Downloads
+3.sudo tar -C /usr/local --strip-components 1 -xJf node-v6.10.3-linux-x64.tar.xz
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add show</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style> .clear-fix { padding-bottom:15px; }
+  .row{ margin-left:0px !important; margin-right:0px !important }
+  .form-control {     background-color: #f6f6f6 !important;     border: 1px solid #f6f6f6 !important; border-radius:0px !important; ; }
+  .img-responsive { border-radius:5px; }
+  .main-head { padding-left:0px !important; padding-right:0px !important; margin-left:0 !important; margin-right:0 !important; background:#f6f6f6 !important; border-bottom:#e3e3e3 solid 1px;  }
+   .maindiv { margin-top:18px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background:#FFF; padding-left:0px !important; padding-right:0px !important }
+ </style>
+ </head>
+
+<body style="background-color:silver;">
+
+  <nav class="navbar navbar-inverse" style="box-shadow: 2px 2px 4px #000000;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand-info"><strong> ShowTrackr</strong></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="inndex.html">Home</a></li>
+
+        <li class="active"><a href="addw.html">Add</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="sign.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+   <div class="container maindiv" >
+
+     <div class="container main-head">
+
+  <div class="col-md-8 col-sm-8 col-xs-8 text-left"  >  <h4 style="font-size:14px !important; font-weight:bold !important; color:#6d6966 !important ">ADD TV SHOWS</h4> </div>
+   <div class="col-md-4 col-sm-4 col-xs-4"  >
+
+
+               </div></div>
+
+      <div style="padding:24px;">
+      <div class="container">
+
+     <div class="col-md-12 col-sm-12 col-xs-12 text-left"  > <strong>Name</strong><br> <input type="text" id="show" placeholder="Enter TV Show Name" style="width:94%" ></div>
+     <br><br><br>
+     <div style="float:left; margin-right:100px; " id="display"></div><br>
+    <br>
+      <div class="col-md-12 col-sm-12 col-xs-12 text-left"  > <button type="button" class="btn btn-info" id="add">Add</button> </div>
+
+      </div>
+      </div>
+
+  <script>
+  $('#add').click(function(){
+      var show=$('#show').val();
+      if(show!="")
+      {
+      $('#display').html(show+" has been added");
+      }
+      else
+      {
+      $('#display').html("Please enter show name");
+      }
+
+
+      })
+
+  </script>
+  </body>
+  </html>
